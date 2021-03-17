@@ -37,7 +37,7 @@ app.get('/:user_id/:todos_id', (req, res) => {
                 res.render('todos', data);
             },
             (reason) => {
-                res.render('todos', data);
+                res.render('todos', reason);
             });
     // res.send('Nothing to see here');
 });
